@@ -5,6 +5,15 @@ console.log("Checkout piyush - https://github.com/officialpiyush");
 console.log(
   "also checkout druv who designed it - https://instagram.com/acedesyne"
 );
+
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
+
+gtag("config", "G-TG5XSGVLED");
+
 async function handleLinks() {
   const res = await fetch("./links.json").then((r) => r.json());
   const mainDiv = document.querySelector(".links-list");
